@@ -1,0 +1,64 @@
+{
+  "watches": [
+    {
+      "id": 1,
+      "name": "LE LOCLE",
+      "price": 26999,
+      "imageName": "1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "CHEMIN DES TOURELLES",
+      "price": 11499,
+      "imageName": "2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "COUTURIER",
+      "price": 33999,
+      "imageName": "3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "TRADITION",
+      "price": 33999,
+      "imageName": "4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "T-TOUCH EXPERT SOLAR",
+      "price": 21999,
+      "imageName": "5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "CHRONO XL",
+      "price": 12999,
+      "imageName": "6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "V8",
+      "price": 29999,
+      "imageName": "7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "GENTLEMAN",
+      "price": 29999,
+      "imageName": "8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "T-Touch II",
+      "price": 19599,
+      "imageName": "9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Classic Gent Quartz",
+      "price": 19999,
+      "imageName": "10.jpg"
+    }
+  ]
+}

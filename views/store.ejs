@@ -48,106 +48,18 @@
     <section class="container content-section">
       <h2 class="section-header">TISSOT Watches</h2>
       <div class="shop-items">
-        <div class="shop-item">
-          <span class="shop-item-title">LE LOCLE</span>
-          <img class="shop-item-image" src="/public/Images/1.jpg" />
+        <% items.watches.forEach(watch => { %>
+        <div class="shop-item" data-item-id="<%= watch.id %>">
+          <span class="shop-item-title"><%= watch.name %></span>
+          <img class="shop-item-image" src="Images/<%= watch.imageName %>" />
           <div class="shop-item-details">
-            <span class="shop-item-price">$269.99</span>
+            <span class="shop-item-price"><%= watch.price /100 %></span>
             <button class="btn btn-primary shop-item-button" type="button">
               ADD TO CART
             </button>
           </div>
         </div>
-        <div class="shop-item">
-          <span class="shop-item-title">CHEMIN DES TOURELLES</span>
-          <img class="shop-item-image" src="/public/Images/2.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$114.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">COUTURIER</span>
-          <img class="shop-item-image" src="/public/Images/3.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$339.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">TRADITION</span>
-          <img class="shop-item-image" src="/public/Images/4.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$339.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">T-TOUCH EXPERT SOLAR</span>
-          <img class="shop-item-image" src="/public/Images/5.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$219.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">CHRONO XL</span>
-          <img class="shop-item-image" src="/public/Images/6.JPG" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$129.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">V8</span>
-          <img class="shop-item-image" src="/public/Images/7.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$19.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">GENTLEMAN</span>
-          <img class="shop-item-image" src="/public/Images/8.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$299.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">T-Touch II</span>
-          <img class="shop-item-image" src="/public/Images/9.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$195.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title"> Classic Gent Quartz</span>
-          <img class="shop-item-image" src="/public/Images/10.jpg" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$199.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
+        <% }); %>
       </div>
     </section>
 
