@@ -162,3 +162,11 @@ function updateCartTotal() {
   document.getElementsByClassName('cart-total-price')[0].innerText =
     '$' + total;
 }
+
+var cartButton = document.querySelector('.navbar i');
+var cartPage = document.querySelector('.cart-page');
+var contentSection = document.querySelector('.content-section');
+cartButton.addEventListener('click', function () {
+  cartPage.classList.toggle('hidden');
+  contentSection.classList.toggle('hidden');
+});

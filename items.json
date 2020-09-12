@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "name": "CHEMIN DES TOURELLES",
+      "name": "CHEMIN DES",
       "price": 11499,
       "imageName": "2.jpg"
     },
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "name": "T-TOUCH EXPERT SOLAR",
+      "name": "T-TOUCH EXPERT",
       "price": 21999,
       "imageName": "5.jpg"
     },
@@ -44,7 +44,7 @@
     },
     {
       "id": 8,
-      "name": "GENTLEMAN",
+      "name": "GENTLE MAN",
       "price": 29999,
       "imageName": "8.jpg"
     },

@@ -266,3 +266,77 @@ header h3 {
   margin: 2rem;
   width: 2rem;
 }
+
+@media screen and (max-width: 560px) {
+  .cart-item {
+    width: 30%;
+  }
+
+  .cart-price {
+    width: 25%;
+    font-size: 0.7rem;
+    color: #333;
+  }
+
+  .cart-quantity {
+    width: 30%;
+  }
+
+  .cart-item-title {
+    color: #333;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .cart-item-image {
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .cart-quantity-input {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .cart-price {
+    width: 12%;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .shop-item-image {
+    width: 100%;
+  }
+}
+
+.navbar i {
+  width: 40px;
+  font-size: 30px;
+  color: white;
+  transition: 0.3s;
+}
+.navbar i:hover {
+  color: rgb(64, 147, 255);
+  transition: 0.3s;
+}
+
+.cart-page {
+  position: absolute;
+  background: white;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hidden {
+  display: none;
+  transition: 0.4s;
+}

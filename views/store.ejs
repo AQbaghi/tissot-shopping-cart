@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tissot | Store</title>
-    <meta charset="UTF-8" />
+    <title>The Generics | Store</title>
+    <meta name="description" content="This is the description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is the description" />
     <link rel="stylesheet" href="styles.css" />
@@ -21,8 +21,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">TISSOT</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -36,22 +37,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="store">STORE</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html"
+                >ABOUT <span class="sr-only">(current)</span></a
+              >
             </li>
           </ul>
         </div>
+        <i class="fas fa-cart-arrow-down"></i>
       </nav>
     </header>
-    <section class="container content-section">
+    <section class="container content-section show">
+      <br /><br />
       <h2 class="section-header">TISSOT Watches</h2>
       <div class="shop-items">
         <% items.watches.forEach(watch => { %>
@@ -69,22 +72,25 @@
       </div>
     </section>
 
-    <section class="container content-section">
-      <h2 class="section-header">CART</h2>
-      <div class="cart-row">
-        <span class="cart-item cart-header cart-column">ITEM</span>
-        <span class="cart-price cart-header cart-column">PRICE</span>
-        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-      </div>
-      <div class="cart-items"></div>
-      <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$0</span>
-      </div>
-      <button class="btn btn-primary btn-purchase" type="button">
-        PURCHASE
-      </button>
-    </section>
+    <div class="cart-page hidden">
+      <section class="container content-section">
+        <br /><br />
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+      </section>
+    </div>
     <footer class="footer bg-dark">
       <div class="container main-footer-container">
         <h3 class="band-name">TISSOT</h3>
@@ -104,6 +110,10 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9395cfacd6.js"
       crossorigin="anonymous"
     ></script>
   </body>
