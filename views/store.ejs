@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Generics | Store</title>
+    <title>Tissot | Store</title>
     <meta name="description" content="This is the description" />
     <link rel="stylesheet" href="styles.css" />
     <!-- Compiled and minified CSS -->
@@ -11,7 +11,11 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script src="store.js" async></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script defer>
+      var stripePublicKey = '<%= stripePublicKey %>';
+    </script>
+    <script src="store.js" defer></script>
   </head>
   <body>
     <header>
@@ -36,7 +40,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="store.html">STORE</a>
+              <a class="nav-link" href="store">STORE</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
@@ -49,7 +53,7 @@
       <h2 class="section-header">TISSOT Watches</h2>
       <div class="shop-items">
         <% items.watches.forEach(watch => { %>
-        <div class="shop-item" data-item-id="<%= watch.id %>">
+        <div class="shop-item" id="<%=watch.id%>">
           <span class="shop-item-title"><%= watch.name %></span>
           <img class="shop-item-image" src="Images/<%= watch.imageName %>" />
           <div class="shop-item-details">
@@ -82,23 +86,6 @@
     <footer class="footer bg-dark">
       <div class="container main-footer-container">
         <h3 class="band-name">TISSOT</h3>
-        <ul class="nav footer-nav">
-          <li>
-            <a href="https://www.youtube.com" target="_blank">
-              <img src="Images/YouTube Logo.png" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.spotify.com" target="_blank">
-              <img src="Images/Spotify Logo.png" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com" target="_blank">
-              <img src="Images/Facebook Logo.png" />
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
 

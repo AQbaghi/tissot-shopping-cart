@@ -1,5 +1,5 @@
 {
-  "name": "rage-against-the-guitar",
+  "name": "tissot-watches",
   "version": "1.0.0",
   "description": "e-commerce site utelising the stripe api to accept payments",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "Abd Al Qader Baghi",
   "license": "ISC",
   "dependencies": {
+    "@stripe/stripe-js": "^1.9.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "stripe": "^8.92.0"
