@@ -4,7 +4,7 @@
   "description": "e-commerce site utelising the stripe api to accept payments",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Abd Al Qader Baghi",
   "license": "ISC",
