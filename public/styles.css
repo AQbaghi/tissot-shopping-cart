@@ -23,11 +23,7 @@ body {
 }
 
 .main-header {
-  width: 100%;
-  height: 100vh;
   background-size: cover;
-  background-image: url('images/header-background.png');
-  z-index: -2;
 }
 
 header h1 {
@@ -41,7 +37,7 @@ header h1 {
   text-align: center;
 }
 header h3 {
-  margin: 0;
+  margin-bottom: 21rem;
   padding: 0;
   font-size: 1.4rem;
   font-weight: 100;
@@ -339,4 +335,25 @@ header h3 {
 .hidden {
   display: none;
   transition: 0.4s;
+}
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header h3 {
+    margin-bottom: 26rem;
+
+    font-size: 1.2rem;
+  }
 }
